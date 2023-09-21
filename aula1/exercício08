@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class FilaPrioritaria {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Escolha uma opção:");
+        System.out.println("1. Gestante");
+        System.out.println("2. Idoso");
+        System.out.println("3. Pessoa com Deficiência (PCD)");
+        System.out.println("4. Nenhuma das alternativas");
+
+        int escolha = scanner.nextInt();
+
+        if (escolha == 1 || escolha == 2 || escolha == 3) {
+            System.out.println("Você tem direito a fila prioritária.");
+        } else if (escolha == 4) {
+            System.out.println("Você não tem direito a fila prioritária.");
+        } else {
+            System.out.println("Opção inválida.");
+        }
+
+
+        scanner.close();
+    }
+}
