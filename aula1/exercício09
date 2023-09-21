@@ -1,0 +1,19 @@
+import java.util.Scanner;
+import java.util.Calendar;
+
+public class CalculadoraIdade {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Insira o ano de nascimento: ");
+        int anoDeNascimento = scanner.nextInt();
+
+        int anoAtual = Calendar.getInstance().get(Calendar.YEAR);
+       
+        int idade = anoAtual - anoDeNascimento;
+
+        System.out.println("Sua idade é: " + idade + " anos");
+
+        scanner.close();
+    }
+}
