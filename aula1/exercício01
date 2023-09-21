@@ -1,19 +1,7 @@
-import java.util.Scanner;
 
-public class Main {
+public class imprimanome {
     public static void main(String[] args) {
-       
-        Scanner scanner = new Scanner(System.in);
-
-    
-        System.out.print("Digite seu nome: ");
-
-    
-        String nome = scanner.nextLine();
-
-    
-        scanner.close();
-
-        System.out.println("meu nome é: " + nome);
+        String nome = ("Amanda");
+    system.out.println("meu nome é" + nome );
     }
 }
