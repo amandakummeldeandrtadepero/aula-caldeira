@@ -1,0 +1,15 @@
+public class CalculadoraTempo {
+    public static void main(String[] args) 
+        int hora = 15;
+        int minuto = 30;
+        int segundo = 45;
+
+        int segundosDesdeMeiaNoite = (hora * 3600) + (minuto * 60) + segundo;
+
+        int segundosRestantes = (24 * 3600) - segundosDesdeMeiaNoite;
+
+        System.out.println("Horário: " + hora + "h " + minuto + "min " + segundo + "s");
+        System.out.println("Segundos desde a meia-noite: " + segundosDesdeMeiaNoite);
+        System.out.println("Segundos restantes até meia-noite: " + segundosRestantes);
+    }
+}
