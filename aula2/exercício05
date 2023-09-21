@@ -1,0 +1,15 @@
+
+    public class exer1 {
+    public static void main(String[] args) {
+       String palavra = ("amanda");
+        int quantidade = palavra.length();
+        int metade = quantidade/2;
+        String nomeMetade = "";
+
+                for (int i = 0; i <metade ; i++){
+                    char c  = palavra.charAt(i);
+                    nomeMetade += c;
+                }
+        System.out.println(nomeMetade);
+    }
+}
