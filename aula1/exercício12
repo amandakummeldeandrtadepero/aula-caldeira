@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class ConversorMoeda {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        double quantiaEmDolares = 100.0;
+
+        System.out.print("Insira a taxa de câmbio (por exemplo, 5.20 para BRL): ");
+        double taxaDeCambio = scanner.nextDouble();
+
+        double valorConvertido = quantiaEmDolares * taxaDeCambio;
+
+        System.out.println("$" + quantiaEmDolares + " em dólares é igual a " + valorConvertido + " na moeda estrangeira.");
+
+        scanner.close();
+    }
+}
