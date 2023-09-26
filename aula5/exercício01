@@ -1,31 +1,20 @@
-import java.util.Arrays;
 import java.util.Scanner;
 public class Lista {
     public static void main (String [] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("insira 01 número: ");
-        int numero01 = scanner.nextInt();
 
-        System.out.print("insira 02 número: ");
-        int numero02 = scanner.nextInt();
+        int[] numeros = new int[5];
+        int soma = 0;
 
-        System.out.print("insira 03 número: ");
-        int numero03 = scanner.nextInt();
+        for ( int i = 0; i< numeros.length ; i++) {
+            System.out.println("Digite o número");
+            int numero = scanner.nextInt();
+            numeros [i] = numero;
+            soma += numero;
+        }
 
-        System.out.print("insira 04 número: ");
-        int numero04 = scanner.nextInt();
-
-        System.out.print("insira 05 número: ");
-        int numero05 = scanner.nextInt();
-
-         int[] numero = new int[] {numero01 , numero02 , numero03 , numero04 , numero05};
-
-         int somanumeros = numero01 + numero02 + numero03 + numero04 + numero05;
-        int medianumeros = somanumeros/5;
-
-        System.out.println("a soma dos número é:" + somanumeros);
-        System.out.println("s media dos números é:" + medianumeros);
-        scanner.close();
+        System.out.println(soma);
+        System.out.println(soma/numeros.length);
 
     }
 }
